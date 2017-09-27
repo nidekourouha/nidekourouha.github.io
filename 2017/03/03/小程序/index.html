@@ -10,7 +10,7 @@
     
     <title>
         
-            关于我 | 
+            微信小程序初体验 | 
         
         GUGU
     </title>
@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#2e2e2e">
     <meta name="author" content="辜培钿">
     <meta name="description" content="童话镇居民">
-    <meta name="keywords" content="gugu">
+    <meta name="keywords" content="gugu,产品体验报告,小程序">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
@@ -60,9 +60,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://gupeitian.top">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="关于我 | GUGU">
+    <meta property="og:title" content="微信小程序初体验 | GUGU">
     <meta property="og:description" content="童话镇居民">
-    
+    <meta property="og:article:tag" content="产品体验报告"> <meta property="og:article:tag" content="小程序"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -225,6 +225,41 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#体验环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">体验环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#产品简述"><span class="post-toc-number">2.</span> <span class="post-toc-text">产品简述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#优势："><span class="post-toc-number">2.1.</span> <span class="post-toc-text">优势：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#劣势："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">劣势：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#产品体验"><span class="post-toc-number">3.</span> <span class="post-toc-text">产品体验</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#美团外卖："><span class="post-toc-number">3.1.</span> <span class="post-toc-text">美团外卖：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#滴滴出行："><span class="post-toc-number">3.2.</span> <span class="post-toc-text">滴滴出行：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#改进方案"><span class="post-toc-number">4.</span> <span class="post-toc-text">改进方案</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）推出小程序商店"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">（1）推出小程序商店</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）进行字号适配，优化体验"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">（2）进行字号适配，优化体验</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">5.</span> <span class="post-toc-text">总结</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
 
 <!-- Layouts -->
 
@@ -239,10 +274,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://upload-images.jianshu.io/upload_images/3250499-570d5de911b8b89b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://upload-images.jianshu.io/upload_images/3250499-1392c70c8ec3a427.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
     
             <p class="article-headline-p">
-                关于我
+                微信小程序初体验
             </p>
         </div>
 
@@ -282,11 +317,20 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB50lEQVR42u3aS27DMAwFQN//0u0BCiuPVNzE5mhVBLar0YIQP8fPI9aBgYGBgYGBgfE1jCNeZ2+tv7N+a2sPGBgYwxgvQtuf7V5xBPkeMDAwJjPO/v3ZVhJqfhzlPWBgYGC0GOvQuQ7BGBgYGO9irC9/1d8xMDAwrkhi12WyalntY7k4BgbGDRl5yey6v/+1v4GBgXErxta4wzJxzY/jwzMjGBgYX8+oBsd1uMyboEnz4MXFFAMDYySjN2bRS1yrW9/KxTEwMG7OqJb+e+D84lhoJ2BgYAxjVAv0vdJ/tTlauBpiYGCMYVQDbm8gIynYRZdODAyMMYz9tHMnjCaBu5mLY2BgPIhRvdiVw2LcqsxJGBgY0xi9gNsbudhvSGBgYExm9ApnO6X//LDKc7gYGBiPY7yrGblzEex9GQMDYw6jWurqPZ8kwOuvYWBgTGb0Svn55S9vapYDPQYGxhhGnkDmY1vVZ6oFPgwMjGmM6kpK/NXUtxr6MTAwpjF6hfs8+Fbf2srFMTAwHs2oBtmda+XONzEwMDDygFil7iSx5YCLgYExnpH/khfjes9jYGBgXD08kae4pzwMDIyRjP1mwM7QRjmFxsDAGMbYGfCqBtzkIC7vb2BgYNyKcd+FgYGBgYGBgfHR9QuHqFS5n7NkDQAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACaElEQVR42u3aS3LiQBAEUO5/6ZkDEHgyqz/WEE8rArCl14uuIrtef776euHh4eHh4eHh4T2M94qv97/69Lr9/vvrpWfDw8PDu8L7x1b743c+8ZIFev/0Z3DybHh4eHg3efkt927us4XDw8PD+w5eDp413Hh4eHj/Ly9qbYN3WjYeHh7e03h5a/upaU6a6VmRuJS14OHh4cW8PDK4//rq+R4eHh5ewKtHmuKNu22RkzJQD13h4eHhHeDNDv5nB2NJ850XLTw8PLwn8HYVhnYgoA2CN4+r4uHh4Y1+rbe3abf1WQQ8XBQ8PDy867xk02/HsPKlWTlOw8PDw7vDWwka8qgiX7I86sXDw8P7LV79Uz+GrYSzS6EwHh4e3mFeGwS0N8uLzeyOdd3Dw8PD28rL49pdI615G10EHHh4eHiHeSsH/Dkvb6Bn7TUeHh7efV4bueYDBHlD3JYNPDw8vCfwks19FgHn41Z5carHVfHw8PA28fIf/7N4dyVimP0HPDw8vNO8/LF2xa8rh2RRa46Hh4d3mFcfL5VNczuMld8xCiPw8PDwjvHaR29LSBsNt4MIeHh4eE/gRYf0m2LfldAWDw8P73d5+UDArIGeHaHVLTgeHh7eYV575TFuu2Rt+x6FEXh4eHgHeK/4yjf9WajRNtlFS42Hh4d3gJcUgxzWHmu1BaOeKcPDw8M7xss36JUhgDa0PZJS4+Hh4V3n5cf/+ftJwYgWFw8PD+/xvLYp39uyHy8MeHh4eMthRN4Qt7CVsQM8PDy8+7y8bc0PxtoDs+R5oqXBw8PDO8z7vgsPDw8PDw8PD+8B11/uEww35EptXAAAAABJRU5ErkJggg==">
         </ul>
     
 
     <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/产品体验报告/">产品体验报告</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/小程序/">小程序</a>
+    </ul>
     
 
     <!-- Share -->
@@ -312,7 +356,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=关于我&url=http://gupeitian.top//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=微信小程序初体验&url=http://gupeitian.top//2017/03/03/小程序/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -321,7 +365,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=关于我&url=http://gupeitian.top//about/index.html&via=辜培钿" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=微信小程序初体验&url=http://gupeitian.top//2017/03/03/小程序/index.html&via=辜培钿" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -330,7 +374,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://gupeitian.top//about/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://gupeitian.top//2017/03/03/小程序/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -345,7 +389,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GUGU&title=关于我&summary=童话镇居民&pics=http://gupeitian.top/img/favicon.ico&url=http://gupeitian.top/about/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GUGU&title=微信小程序初体验&summary=童话镇居民&pics=http://gupeitian.top/img/favicon.ico&url=http://gupeitian.top/2017/03/03/小程序/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -363,13 +407,23 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=432506345&auto=0&height=66"></iframe>
-
-<h2 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h2><p>辜培钿（Peitian Gu)</p>
-<h2 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h2><p>gpt@gupeitian.top</p>
-<p>gupeitian@gmail.com</p>
-<h2 id="微信号"><a href="#微信号" class="headerlink" title="微信号"></a>微信号</h2><p>meceder</p>
-<h2 id="个人简历"><a href="#个人简历" class="headerlink" title="个人简历"></a>个人简历</h2><p><a href="http://gupeitian.top/about/resume.html">点我呀！</a></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/3250499-1392c70c8ec3a427.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信小程序"></p>
+<h2 id="体验环境"><a href="#体验环境" class="headerlink" title="体验环境"></a>体验环境</h2><p>使用设备：iphone se<br>操作系统：ios10.2.1<br>APP版本：6.5.5<br>体验时间：2017年2月23日</p>
+<h2 id="产品简述"><a href="#产品简述" class="headerlink" title="产品简述"></a>产品简述</h2><p>微信小程序是微信官方推出的一款轻应用服务，区别于传统的APP，小程序的优势体现在其轻便，随用随走，省去了下载应用需要的成本和空间，其劣势也十分明显，功能没有传统APP的内容多，适用性也比较有限。</p>
+<a id="more"></a>
+<h3 id="优势："><a href="#优势：" class="headerlink" title="优势："></a>优势：</h3><p>（1）<strong> 轻便 </strong>：小程序的入口在微信的发现页面当中的最下端，使用十分方便，只需要搜索相应的小程序并加载就可以，不需要等待很久，而且一般APP常用的功能在小程序中也能找到，不需要下载APP且等待很久，即可体验与传统APP相当的内容，十分便捷；<br>（2）<strong> 用完即走 </strong>：很多小伙伴可能会发现自己手机上常用的APP就那么几个，但是手机内存还是被各种不常用的APP给占领了，又不舍得删去，这时候你会发现小程序是你的救星，因为小程序用完直接退出来，不会占用手机的太多内存，下一次使用也是直接进入即可，用完即走，再用再来；<br>（3）<strong> 功能众多 </strong>：小程序刚开始推出的时候有各种声音说微信将会成为一个操作系统，微信将来一家独大等等各种声音，这么说有点夸张，不过你不得不佩服微信小程序的功能之强大，在小程序之中我所体验的就包括了涉及资讯，服务，出行，娱乐，购物等各种各样的小程序，可以夸张的说，小程序中除了游戏之外，包含了APP Store中的各种分类。</p>
+<h3 id="劣势："><a href="#劣势：" class="headerlink" title="劣势："></a>劣势：</h3><p>（1）<strong> 功能被阉割 </strong>：许多巨型APP要用一个小程序给展示出来，必然会妥协一些不太常用的功能，相对于传统APP来说，小程序只会是一个阉割版的体验，不可能会照搬APP甚至超越APP；<br>（2）<strong> 缺乏引导性 </strong>：在APP Store中你一进去会发现很精彩，各种APP和游戏的推荐以及分类，还有排行榜可以参考，可玩性很强，然而微信小程序中你会很困惑，我该去哪里发现小程序的，答案只有一个，搜索栏，只能通过搜索你所需要的小程序名字你才能使用，这点十分不方便，缺乏对用户的引导；</p>
+<h2 id="产品体验"><a href="#产品体验" class="headerlink" title="产品体验"></a>产品体验</h2><p>在这里选择两个比较具有代表性的小程序作为代表，分享一下使用过程中的感受</p>
+<h3 id="美团外卖："><a href="#美团外卖：" class="headerlink" title="美团外卖："></a>美团外卖：</h3><p><img src="http://upload-images.jianshu.io/upload_images/3250499-bd441841d9c13c81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖小程序.jpg"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-fd8a3099ab046051.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖APP"><br>体验过程中，通过对小程序和APP进行感受，<strong>大部分的体验是没有什么太大区别</strong>，主要的区别体现在<strong>细微之处</strong>。首先点餐的时候选择菜式的时候小程序当中的<strong>动画特效不如APP中的生动</strong>，给人一种比较硬邦邦的感觉。第二是<strong>登录方式</strong>，我这里使用的是微信登录，因为我已经将微信和自己的美团账户进行绑定，所以很方便的登录至自己常用的美团账号，值得考虑的是这里如果美团用户没有将自己的账号与微信绑定的话是不是会被强制进行一波绑定。第三是<strong>部分功能缺失</strong>，例如优惠消息，对商家的评价以及我的当中的许多功能，虽然是些小功能，但是有可能会影响到用户体验，例如美团红包，有红包的用户可能会因为没有红包功能而放弃小程序叫餐改用APP叫餐。第四是<strong> 支付方式 </strong>，也许是入口被微信所掌握，所以付款的方式只能是微信支付和货到付款。第五是<strong> 字体 </strong>，也许是我用的手机屏幕太小，可以明显感受到字体是偏小的。<br>我使用了小程序叫了一个外卖，抛开一些优惠信息缺失以及不能使用美团红包不说，体验和APP相比区别并不是很大，在<strong> 受制于手机内存 </strong>的情况下抛弃APP使用小程序用美团外卖叫餐也是一种不错的选择。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-1f2388cd023f7eb9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="使用小程序叫餐"><br>为了体现小程序与传统的web页面还不太一样，我也上了一波美团外卖的网站感受一下区别：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-03e05b029f075726.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖web版"><br>能够明显的感受到，web版的美团外卖<strong>顿挫感很强</strong>，而且受到web浏览器的影响严重，从图中可以看到双下巴和浏览器的地址栏，体验一般，明显不如小程序和APP好。</p>
+<h3 id="滴滴出行："><a href="#滴滴出行：" class="headerlink" title="滴滴出行："></a>滴滴出行：</h3><p><img src="http://upload-images.jianshu.io/upload_images/3250499-dc91031d9466855f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="左图是小程序，右图是APP"></p>
+<p>接下来我体验的是滴滴出行，从上图可以明显看出，滴滴出行的小程序和APP的区别是非常大的，小程序整体<strong>界面简洁，目的性很强</strong>，就是一个——叫车，这点符合小程序轻便的产品定位，而APP<strong> 内容十分丰富 </strong>，包含快车，顺风车，出租车，专车，试驾，代驾等等，能想到的出行方式基本都能在上面找到，而且支持查看地图，周围的车数量和预约叫车，功能性很强，也十分实用。总的来说使用哪个方式的滴滴出行我个人觉得还是根据需要，如果只是想简单叫个网约车，并且比较喜欢纯净一点的产品，那小程序版滴滴出行你一定会喜欢的。而如果是滴滴重度用户，经常使用滴滴出行中的顺风车等功能，那还是需要下一个APP在手机上以满足自己的需要，体验下来的最大感觉就是按需使用，<strong> 按需选择 </strong>合适自己的。而两者的区别和上面介绍美团外卖的时候说的那几个基本一致，这里不再作多余介绍。</p>
+<p>这里我选择的是美团外卖和滴滴出行作为代表对微信小程序进行一个简单的体验，之所以选择着两个应用是因为这两个应用是比较重量级的，APP的大小都是比较大的，占据较大的内存，我想感受一下将其放入一个小程序当中的体验会不会和APP中的体验有太大的差别，最后得到的结论也很明显：<strong> 在日常的使用中，需求不是很大的情况下，小程序可以满足很大部分APP能够满足的功能，但是如果是需求大且追求更好的体验，那么APP更能满足你。 </strong></p>
+<h2 id="改进方案"><a href="#改进方案" class="headerlink" title="改进方案"></a>改进方案</h2><h3 id="（1）推出小程序商店"><a href="#（1）推出小程序商店" class="headerlink" title="（1）推出小程序商店"></a>（1）推出小程序商店</h3><p>类似于手机中的APP Store，推出一个小程序商店，对小程序进行分类和排行，定期推送一些优秀的小程序推荐给用户，并设置小程序评分机制，作为小程序排行的参考；</p>
+<h3 id="（2）进行字号适配，优化体验"><a href="#（2）进行字号适配，优化体验" class="headerlink" title="（2）进行字号适配，优化体验"></a>（2）进行字号适配，优化体验</h3><p>对于一些手机进行字号适配，例如iphone小屏幕手机用户使用小程序时可以感受到字号太小，不够友好，这方面需要改进；</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次的微信小程序体验是我做的第一个体验项目，平时使用了好多产品，但是很少说会把自己对于该产品的感觉和对该产品的建议给系统的整理下来，这次的体验我从一个用户的角度客观的分析了小程序与APP之间的差异和各自的优缺点，供大家做一个选择的参考。总的来讲，我觉得小程序是小内存手机用户的一个福音，因为有小程序，很多手机上的APP可以卸载，但是对于一些重度依赖APP的用户来说，小程序带来的体验远远不如APP那么便捷，所以我觉得<strong>小程序虽好，但是也要根据自己的需求在小程序和APP之间做出一个正确选择</strong>。</p>
 
     
 
@@ -396,11 +450,27 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/04/10/TIM产品体验报告/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2017/02/28/我对产品经理的理解/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -608,6 +678,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
