@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.4 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            gallery | 
+        
+        GUGU
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2e2e2e">
+    <meta name="author" content="辜培钿">
+    <meta name="description" content="童话镇居民">
+    <meta name="keywords" content="gugu">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GUGU">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://gupeitian.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="gallery | GUGU">
+    <meta property="og:description" content="童话镇居民">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #2e2e2e;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #2e2e2e !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #2e2e2e !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #2e2e2e !important;
+  }
+
+  .toTop {
+    background: #2e2e2e !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #2e2e2e;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #2e2e2e;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #2e2e2e;
+  }
+
+  .post-toc a:hover {
+    color: #2e2e2e;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <!-- Single Gallery Page -->
+        
+    <link rel="stylesheet" href="/css/gallery.min.css">
+
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>
+                <a href="/"><strong>GUGU</strong></a> - gallery
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#footer" class="icon fa-info-circle">
+                            ©&nbsp;辜培钿
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-9215f2d2965e28ee.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-9215f2d2965e28ee.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-9215f2d2965e28ee.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-9215f2d2965e28ee.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Guangzhou" /></a>
+                        <h2>Guangzhou</h2>
+                        <p>Zhujiang new city</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-e4afeb695396eb82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-e4afeb695396eb82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-e4afeb695396eb82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-e4afeb695396eb82.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cool Car" /></a>
+                        <h2>Cool Car</h2>
+                        <p>果然我是喜欢小钢炮</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-ceb1b0d26e8f0fa7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-ceb1b0d26e8f0fa7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-ceb1b0d26e8f0fa7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-ceb1b0d26e8f0fa7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Route 66" /></a>
+                        <h2>Route 66</h2>
+                        <p>梦想之旅</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-9903d2e19f2346e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-9903d2e19f2346e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-9903d2e19f2346e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-9903d2e19f2346e0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Blue" /></a>
+                        <h2>Blue</h2>
+                        <p>天空之城</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-13c4cac4fecc5d2f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-13c4cac4fecc5d2f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-13c4cac4fecc5d2f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-13c4cac4fecc5d2f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Liule" /></a>
+                        <h2>Liule</h2>
+                        <p>溜了溜了</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-d65b7b251c183e20.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-d65b7b251c183e20.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-d65b7b251c183e20.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-d65b7b251c183e20.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Something" /></a>
+                        <h2>Something</h2>
+                        <p>Interesting</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-02a5b6719eef700b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-02a5b6719eef700b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-02a5b6719eef700b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-02a5b6719eef700b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Xiamen" /></a>
+                        <h2>Xiamen</h2>
+                        <p>厦门之旅</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-427fd35898c87359.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-427fd35898c87359.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-427fd35898c87359.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-427fd35898c87359.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Zheng Chenggong" /></a>
+                        <h2>Zheng Chenggong</h2>
+                        <p>郑成功</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-69400bdd4c7d9a70.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-69400bdd4c7d9a70.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-69400bdd4c7d9a70.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-69400bdd4c7d9a70.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Suning" /></a>
+                        <h2>Suning</h2>
+                        <p>苏宁广场</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-0b3e54fe882fdac8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-0b3e54fe882fdac8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-0b3e54fe882fdac8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-0b3e54fe882fdac8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="JOURNEY" /></a>
+                        <h2>JOURNEY</h2>
+                        <p>高铁途中</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-d6cc363a5c2443fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-d6cc363a5c2443fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-d6cc363a5c2443fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-d6cc363a5c2443fd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WPS" /></a>
+                        <h2>WPS</h2>
+                        <p>hello WPS</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="http://upload-images.jianshu.io/upload_images/3250499-21ed1e474dbaa0bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" class="image lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-21ed1e474dbaa0bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="cursor: pointer;outline: 0px;display: block;background-image: url(http://upload-images.jianshu.io/upload_images/3250499-21ed1e474dbaa0bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);"><img class="lazy" data-original="http://upload-images.jianshu.io/upload_images/3250499-21ed1e474dbaa0bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Zhuhai" /></a>
+                        <h2>Zhuhai</h2>
+                        <p>珠海大剧院</p>
+                    </article>
+                
+            
+        </div>
+        <!-- Footer -->
+        <!--
+        <footer id="footer" class="panel">
+          <div class="inner split">
+            <div>
+              <section>
+                <h2>Magna feugiat sed adipiscing</h2>
+                <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+              </section>
+              <section>
+                <h2>Follow me on ...</h2>
+                <ul class="icons">
+                  <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                  <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                  <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="#" class="icon fa-telegram"><span class="label">Telegram</span></a></li>
+                </ul>
+              </section>
+              <p class="copyright">
+                &copy; Design: <a href="#">Gallery</a>.
+              </p>
+            </div>
+            <div>
+              <section>
+                <h2>Get in touch</h2>
+                <form method="post" action="#">
+                  <div class="field half first">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="field half">
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                    <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <ul class="actions">
+                    <li><input type="submit" value="Send" class="special" /></li>
+                    <li><input type="reset" value="Reset" /></li>
+                  </ul>
+                </form>
+              </section>
+            </div>
+          </div>
+        </footer>
+        -->
+
+    </div>
+
+    <!-- Scripts -->
+    
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/gallery/gallery.js"></script>
+        <script src="/js/lazyload.min.js"></script>
+    
+
+    <script type="text/javascript">
+        queue.offer(function(){
+            $('.lazy').lazyload({
+              effect: 'fadeIn',
+              event: 'scrollstop'
+            });
+        })
+    </script>
+</body>
+
+    
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.4 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            微信小程序初体验 | 
+        
+        GUGU
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2e2e2e">
+    <meta name="author" content="辜培钿">
+    <meta name="description" content="童话镇居民">
+    <meta name="keywords" content="gugu,产品体验报告,小程序">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GUGU">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://gupeitian.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="微信小程序初体验 | GUGU">
+    <meta property="og:description" content="童话镇居民">
+    <meta property="og:article:tag" content="产品体验报告"> <meta property="og:article:tag" content="小程序"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #2e2e2e;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #2e2e2e !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #2e2e2e !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #2e2e2e !important;
+  }
+
+  .toTop {
+    background: #2e2e2e !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #2e2e2e;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #2e2e2e;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #2e2e2e;
+  }
+
+  .post-toc a:hover {
+    color: #2e2e2e;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#体验环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">体验环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#产品简述"><span class="post-toc-number">2.</span> <span class="post-toc-text">产品简述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#优势："><span class="post-toc-number">2.1.</span> <span class="post-toc-text">优势：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#劣势："><span class="post-toc-number">2.2.</span> <span class="post-toc-text">劣势：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#产品体验"><span class="post-toc-number">3.</span> <span class="post-toc-text">产品体验</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#美团外卖："><span class="post-toc-number">3.1.</span> <span class="post-toc-text">美团外卖：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#滴滴出行："><span class="post-toc-number">3.2.</span> <span class="post-toc-text">滴滴出行：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#改进方案"><span class="post-toc-number">4.</span> <span class="post-toc-text">改进方案</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）推出小程序商店"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">（1）推出小程序商店</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）进行字号适配，优化体验"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">（2）进行字号适配，优化体验</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">5.</span> <span class="post-toc-text">总结</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://upload-images.jianshu.io/upload_images/3250499-1392c70c8ec3a427.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
+    
+            <p class="article-headline-p">
+                微信小程序初体验
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/hhh.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>辜培钿</strong>
+        <span>9月 27, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZElEQVR42u3aQZLiMBAEQP7/6Z3rRsyOt0otCw+RPhGAsdIHq6nu15+PPl54eHh4eHh4eHgP473i4x8/9Nf719///s3r15O14eHh4Z3h/edRO7jwNfj7p9fgaG14eHh4B3n5JSeMZMtZWxseHh7e83lt0Zy8k99WPDw8vN/IywOIpERO2Hh4eHhP47Wl7U+l8/WNWNskDmUteHh4eDEvjwzOvz7a38PDw8MLePVI01IImy/9zTNleHh4eAFvHjSsRRjX5Xi7Hjw8PLx38daK3TZEmLfK6n8MeHh4eDfwkgAij2KTW5APItQ3BQ8PD+9mXv7gbh/xefuqbbBd/z4eHh7e3by1QLYdPsi3kDzqxcPDw3sar2W3EXBexNehMB4eHt7NvL0LTTaA5PblLbfoHwMeHh7eDbw2JmjD3HbgYDKShYeHh3c3ry1n25hgrcE2GVPAw8PDu5uXN72SInhSTLfbBh4eHt67eJO4oSXNY+JRSo2Hh4e3iZe3//MRq10Rw2K4jIeHh3czr201TQYC2hGuPObAw8PDey+v3TDycycttPwsPDw8vJO8tmhuGZMRqyJuxsPDwzvIW2tl5cVuMrLQhrZ4eHh4z+TNhwla8CTUwMPDw7ubtxYxrDW02o2n3ZDw8PDwzvBe8dFGtGsbzCSGwMPDwzvJy1tZdagal+NtCLJhdAAPDw9vzFt7QOeF9fw3N/T38PDw8B7Dy0OH9qy63MfDw8N7MG9eWOcbQ/EHAA8PD+8gL7n83gXtGjvAw8PDO89rI4BdA1WTgKMII/Dw8PC28j7vwMPDw8PDw8PDe8DxBST1FhFXMd1WAAAAAElFTkSuQmCC">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/产品体验报告/">产品体验报告</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/小程序/">小程序</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=微信小程序初体验&url=http://gupeitian.top//2017/09/27/小程序/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=微信小程序初体验&url=http://gupeitian.top//2017/09/27/小程序/index.html&via=辜培钿" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://gupeitian.top//2017/09/27/小程序/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GUGU&title=微信小程序初体验&summary=童话镇居民&pics=http://gupeitian.top/img/favicon.ico&url=http://gupeitian.top/2017/09/27/小程序/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><img src="http://upload-images.jianshu.io/upload_images/3250499-1392c70c8ec3a427.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="微信小程序"></p>
+<h2 id="体验环境"><a href="#体验环境" class="headerlink" title="体验环境"></a>体验环境</h2><p>使用设备：iphone se<br>操作系统：ios10.2.1<br>APP版本：6.5.5<br>体验时间：2017年2月23日</p>
+<h2 id="产品简述"><a href="#产品简述" class="headerlink" title="产品简述"></a>产品简述</h2><p>微信小程序是微信官方推出的一款轻应用服务，区别于传统的APP，小程序的优势体现在其轻便，随用随走，省去了下载应用需要的成本和空间，其劣势也十分明显，功能没有传统APP的内容多，适用性也比较有限。</p>
+<a id="more"></a>
+<h3 id="优势："><a href="#优势：" class="headerlink" title="优势："></a>优势：</h3><p>（1）<strong> 轻便 </strong>：小程序的入口在微信的发现页面当中的最下端，使用十分方便，只需要搜索相应的小程序并加载就可以，不需要等待很久，而且一般APP常用的功能在小程序中也能找到，不需要下载APP且等待很久，即可体验与传统APP相当的内容，十分便捷；<br>（2）<strong> 用完即走 </strong>：很多小伙伴可能会发现自己手机上常用的APP就那么几个，但是手机内存还是被各种不常用的APP给占领了，又不舍得删去，这时候你会发现小程序是你的救星，因为小程序用完直接退出来，不会占用手机的太多内存，下一次使用也是直接进入即可，用完即走，再用再来；<br>（3）<strong> 功能众多 </strong>：小程序刚开始推出的时候有各种声音说微信将会成为一个操作系统，微信将来一家独大等等各种声音，这么说有点夸张，不过你不得不佩服微信小程序的功能之强大，在小程序之中我所体验的就包括了涉及资讯，服务，出行，娱乐，购物等各种各样的小程序，可以夸张的说，小程序中除了游戏之外，包含了APP Store中的各种分类。</p>
+<h3 id="劣势："><a href="#劣势：" class="headerlink" title="劣势："></a>劣势：</h3><p>（1）<strong> 功能被阉割 </strong>：许多巨型APP要用一个小程序给展示出来，必然会妥协一些不太常用的功能，相对于传统APP来说，小程序只会是一个阉割版的体验，不可能会照搬APP甚至超越APP；<br>（2）<strong> 缺乏引导性 </strong>：在APP Store中你一进去会发现很精彩，各种APP和游戏的推荐以及分类，还有排行榜可以参考，可玩性很强，然而微信小程序中你会很困惑，我该去哪里发现小程序的，答案只有一个，搜索栏，只能通过搜索你所需要的小程序名字你才能使用，这点十分不方便，缺乏对用户的引导；</p>
+<h2 id="产品体验"><a href="#产品体验" class="headerlink" title="产品体验"></a>产品体验</h2><p>在这里选择两个比较具有代表性的小程序作为代表，分享一下使用过程中的感受</p>
+<h3 id="美团外卖："><a href="#美团外卖：" class="headerlink" title="美团外卖："></a>美团外卖：</h3><p><img src="http://upload-images.jianshu.io/upload_images/3250499-bd441841d9c13c81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖小程序.jpg"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-fd8a3099ab046051.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖APP"><br>体验过程中，通过对小程序和APP进行感受，<strong>大部分的体验是没有什么太大区别</strong>，主要的区别体现在<strong>细微之处</strong>。首先点餐的时候选择菜式的时候小程序当中的<strong>动画特效不如APP中的生动</strong>，给人一种比较硬邦邦的感觉。第二是<strong>登录方式</strong>，我这里使用的是微信登录，因为我已经将微信和自己的美团账户进行绑定，所以很方便的登录至自己常用的美团账号，值得考虑的是这里如果美团用户没有将自己的账号与微信绑定的话是不是会被强制进行一波绑定。第三是<strong>部分功能缺失</strong>，例如优惠消息，对商家的评价以及我的当中的许多功能，虽然是些小功能，但是有可能会影响到用户体验，例如美团红包，有红包的用户可能会因为没有红包功能而放弃小程序叫餐改用APP叫餐。第四是<strong> 支付方式 </strong>，也许是入口被微信所掌握，所以付款的方式只能是微信支付和货到付款。第五是<strong> 字体 </strong>，也许是我用的手机屏幕太小，可以明显感受到字体是偏小的。<br>我使用了小程序叫了一个外卖，抛开一些优惠信息缺失以及不能使用美团红包不说，体验和APP相比区别并不是很大，在<strong> 受制于手机内存 </strong>的情况下抛弃APP使用小程序用美团外卖叫餐也是一种不错的选择。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-1f2388cd023f7eb9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="使用小程序叫餐"><br>为了体现小程序与传统的web页面还不太一样，我也上了一波美团外卖的网站感受一下区别：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-03e05b029f075726.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="美团外卖web版"><br>能够明显的感受到，web版的美团外卖<strong>顿挫感很强</strong>，而且受到web浏览器的影响严重，从图中可以看到双下巴和浏览器的地址栏，体验一般，明显不如小程序和APP好。</p>
+<h3 id="滴滴出行："><a href="#滴滴出行：" class="headerlink" title="滴滴出行："></a>滴滴出行：</h3><p><img src="http://upload-images.jianshu.io/upload_images/3250499-dc91031d9466855f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="左图是小程序，右图是APP"></p>
+<p>接下来我体验的是滴滴出行，从上图可以明显看出，滴滴出行的小程序和APP的区别是非常大的，小程序整体<strong>界面简洁，目的性很强</strong>，就是一个——叫车，这点符合小程序轻便的产品定位，而APP<strong> 内容十分丰富 </strong>，包含快车，顺风车，出租车，专车，试驾，代驾等等，能想到的出行方式基本都能在上面找到，而且支持查看地图，周围的车数量和预约叫车，功能性很强，也十分实用。总的来说使用哪个方式的滴滴出行我个人觉得还是根据需要，如果只是想简单叫个网约车，并且比较喜欢纯净一点的产品，那小程序版滴滴出行你一定会喜欢的。而如果是滴滴重度用户，经常使用滴滴出行中的顺风车等功能，那还是需要下一个APP在手机上以满足自己的需要，体验下来的最大感觉就是按需使用，<strong> 按需选择 </strong>合适自己的。而两者的区别和上面介绍美团外卖的时候说的那几个基本一致，这里不再作多余介绍。</p>
+<p>这里我选择的是美团外卖和滴滴出行作为代表对微信小程序进行一个简单的体验，之所以选择着两个应用是因为这两个应用是比较重量级的，APP的大小都是比较大的，占据较大的内存，我想感受一下将其放入一个小程序当中的体验会不会和APP中的体验有太大的差别，最后得到的结论也很明显：<strong> 在日常的使用中，需求不是很大的情况下，小程序可以满足很大部分APP能够满足的功能，但是如果是需求大且追求更好的体验，那么APP更能满足你。 </strong></p>
+<h2 id="改进方案"><a href="#改进方案" class="headerlink" title="改进方案"></a>改进方案</h2><h3 id="（1）推出小程序商店"><a href="#（1）推出小程序商店" class="headerlink" title="（1）推出小程序商店"></a>（1）推出小程序商店</h3><p>类似于手机中的APP Store，推出一个小程序商店，对小程序进行分类和排行，定期推送一些优秀的小程序推荐给用户，并设置小程序评分机制，作为小程序排行的参考；</p>
+<h3 id="（2）进行字号适配，优化体验"><a href="#（2）进行字号适配，优化体验" class="headerlink" title="（2）进行字号适配，优化体验"></a>（2）进行字号适配，优化体验</h3><p>对于一些手机进行字号适配，例如iphone小屏幕手机用户使用小程序时可以感受到字号太小，不够友好，这方面需要改进；</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次的微信小程序体验是我做的第一个体验项目，平时使用了好多产品，但是很少说会把自己对于该产品的感觉和对该产品的建议给系统的整理下来，这次的体验我从一个用户的角度客观的分析了小程序与APP之间的差异和各自的优缺点，供大家做一个选择的参考。总的来讲，我觉得小程序是小内存手机用户的一个福音，因为有小程序，很多手机上的APP可以卸载，但是对于一些重度依赖APP的用户来说，小程序带来的体验远远不如APP那么便捷，所以我觉得<strong>小程序虽好，但是也要根据自己的需求在小程序和APP之间做出一个正确选择</strong>。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/09/27/我对产品经理的理解/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/09/27/在金山/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/2.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/hhh.jpg" alt="辜培钿's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        gpt@gupeitian.top
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:gpt@gupeitian.top" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">6</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/产品/">产品<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/摄影/">摄影<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="时刻">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                时刻
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">grade</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/nidekourou" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/profile.php?id=100011359522555" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://weibo.com/u/2256239110" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.svg);">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/nidekourouha" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/gu-pei-dian/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-zhihu.svg);">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;GUGU
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#2e2e2e'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #2e2e2e, 0 0 15px #2e2e2e'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#2e2e2e',
+        'border-left-color': '#2e2e2e'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script src="/js/smoothscroll.js"></script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

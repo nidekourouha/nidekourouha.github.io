@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.4 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            我的产品之路 | 
+        
+        GUGU
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+        <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2e2e2e">
+    <meta name="author" content="辜培钿">
+    <meta name="description" content="童话镇居民">
+    <meta name="keywords" content="gugu,实习小记">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GUGU">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://gupeitian.top">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="我的产品之路 | GUGU">
+    <meta property="og:description" content="童话镇居民">
+    <meta property="og:article:tag" content="实习小记"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #2e2e2e;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #2e2e2e !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #2e2e2e !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #2e2e2e !important;
+  }
+
+  .toTop {
+    background: #2e2e2e !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #2e2e2e;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #2e2e2e;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #2e2e2e;
+  }
+
+  .post-toc a:hover {
+    color: #2e2e2e;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初出茅庐"><span class="post-toc-number">1.</span> <span class="post-toc-text">初出茅庐</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自我提高"><span class="post-toc-number">2.</span> <span class="post-toc-text">自我提高</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#亮剑出鞘"><span class="post-toc-number">3.</span> <span class="post-toc-text">亮剑出鞘</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#上战场"><span class="post-toc-number">4.</span> <span class="post-toc-text">上战场</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#曾梦想仗剑走天涯"><span class="post-toc-number">5.</span> <span class="post-toc-text">曾梦想仗剑走天涯</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://upload-images.jianshu.io/upload_images/3250499-9eb3c0a0bc05720c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
+    
+            <p class="article-headline-p">
+                我的产品之路
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/hhh.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>辜培钿</strong>
+        <span>9月 27, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACaElEQVR42u3awW7CMBAEUP7/p9trpQoys05MQM+nCoXGL4fsMuvHz1evBx4eHh4eHh4e3s14j3j9vf7Zf/j/+etvJZ/ke8PDw8PbyTt41QZbyfH5gxjuDQ8PD28jLy8G+e1f3yW/b1Go8PDw8G7Gy1vqBNY25Xh4eHify2uDgzxuwMPDw/ssXt4Q51FFEry2kceFWQseHh5ezJsNwPb8/bb5Hh4eHt4TXn2k6eXLPS8ns3FXtEM8PDy8i3lt/Np+3g698mhj6RcDHh4e3jIved2fGyWsNOtLvxjw8PDwTuLlL/RZXLteAIoQGQ8PD28LLw9w82FYXnJWwgg8PDy8d/HacCEvBkn5aeMJPDw8vPfy8tZ2Fs62I64cVsz38PDw8E7lzcLTJJBtR1ztqOxpYIGHh4e3hbcSpM7a6+Qus2gDDw8P72reeju7EubOIoyDR4OHh4d3Ma+NDKIgdTT0yq/Hw8PDuw+vbaPbOLhtsvOSg4eHh7eTlwQBbYP7iNd6icLDw8N7F68d+a8cL8hDilmJwsPDw7ual0SobdM8G3HNyhIeHh7eft766zh/EO23ZrvCw8PD28nLX83JhtbXbMCGh4eHdzXv3E3Mrs/3Ew3h8PDw8C7mtauNdNu2OLlyqe7h4eHhnRTjrrzQ8w210UNOwsPDw9vPa4vB7KDAWYO3g3vh4eHhbeTlzXF+OKCNGNqDCHh4eHj357Xfyh9T3lIfHGXAw8PD+yhee6SgLSTRITA8PDy8jbzZ0Gs2JJsduloqDHh4eHin8q44XNW23QebzosWHh4e3sW871t4eHh4eHh4eHg3WL/rSYt/BG7cdwAAAABJRU5ErkJggg==">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/实习小记/">实习小记</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=我的产品之路&url=http://gupeitian.top//2017/09/27/我的产品之路/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=我的产品之路&url=http://gupeitian.top//2017/09/27/我的产品之路/index.html&via=辜培钿" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://gupeitian.top//2017/09/27/我的产品之路/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GUGU&title=我的产品之路&summary=童话镇居民&pics=http://gupeitian.top/img/favicon.ico&url=http://gupeitian.top/2017/09/27/我的产品之路/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>第一次接触到产品经理这个岗位是在大三上学期的时候，当时期末的时候在未实习跟将来的工作做打算，第一次听到这个专业名词，一开始觉得很高大上，深入了解之后，觉得产品狗名副其实。由于学习的专业是软件工程，自己本人也是想往互联网行业发展，而且对打代码有一种深深的恐惧。于是在大三下学期的时候开始往成为一个0岁的产品经理的方向努力，准备找这方面的实习，开始踏上了产品这条路。</p>
+<a id="more"></a>
+<h2 id="初出茅庐"><a href="#初出茅庐" class="headerlink" title="初出茅庐"></a>初出茅庐</h2><p>时间回到今年的3月份，因为想往产品方面发展，于是就做了一些行动。<br>首先是勾搭自己身边的一些产品长辈，身边有一些师兄以及亲人就是在做产品，也有做运营以及交互设计的。通过他们我知道了产品经理的职责，总的来说就是<strong>挖掘需求，设计产品，跟开发工程师，运维人员打交道的一个职位</strong>。这是一个比较考验综合能力的职位，需要具备的能力有很多：<br>1.强大的逻辑能力：能够设计出符合用户体验以及用户思维的产品；<br>2.较强的沟通能力：能够把需求跟开发工程师，UI设计师，运维工程师们讲清楚，高效的沟通在工作中发挥着重大的作用；<br>3.对于工具的使用能力：要熟悉掌握各种工具类软件，比如Axure（用于画原型图）、Sketch（用于界面设计）、PS、Xmind（思维导图）、Visio（线框图）等等;<br>4.一定的语言能力：需要时常撰写产品需求文档，竞品分析报道，版本更新文案等等;<br>5.一定的管理能力：安排版本计划，管理BUG等等;<br>在产品的路上，长辈们的建议就是<strong>不断学习，不断提高自我</strong>。</p>
+<h2 id="自我提高"><a href="#自我提高" class="headerlink" title="自我提高"></a>自我提高</h2><p>紧接着就是在网上了解各种学习的渠道，我学习产品的比较系统渠道主要有3种：简书、知乎、网易云课堂以及B站，还有一些比较零散的渠道就是比如加入一些产品的微信群，在里面也会有一些关于产品的交流。<br>1.简书：一个很好的平台，在简书上可以搜索到许多产品的专题，在这些专题中会有很多产品体验报告，竞品分析报告，通过这些前辈们撰写的报告，一方面拓展了自己的产品思维，在这些报告中会详细地介绍一个产品的目标用户，市场分析，竞品分析，产品详细体验以及改进方案等等，通过这些内容可以很系统地学着去体验一个产品。另一方面也可以参考前辈们的产品体验报告，体验各种新鲜的APP，然后撰写产品体验报告，从用户的角度去体验吗，从产品经理的角度去改进；<br>2.知乎：互联网人的社区，在知乎上我接触到许多的产品人，主要是看看一些专业的产品经理对于一些热点问题的看法跟态度，紧跟潮流。就比如一些问题“如何评价共享经济，共享模式？”，在下面会有很多人提出自己的观点，可以看看一些专业人士的看法，加上自己对于问题的理解，去深入思考，在面试的时候就会发现自己想问题的思维会变得全面一些，深刻一些。此外知乎上还会有一些工具跟资料的分享，也是对我有很大帮助，就比如一个免费在线原型设计平台：<a href="http://www.xiaopiu.com" target="_blank" rel="external">xiaopiu</a>，开发者就经常在上面分享一些产品原型可供参考，也是不错的学习资料；<br>3.网易云课堂：上面有许多的产品课程，我挑了两个，一个是“从小白到产品经理”，一个是“交互设计精髓”，先是系统学习一下关于产品经理这个职位的介绍，具体工作，要求，好让自己有个比较明确的努力方向，学习交互设计是为了让自己对一些设计的规范，逻辑有比较正确的认识；<br>4.B站：你没有看错，就是B站，B站上面也有很多工具教程，比如PS教程跟Axure教程，我都是在B站上学习并照着做，觉得效果还是不错的。我觉得工具类的软件只需要知道一些基本操作，然后其他花哨一些的功能可以等具体要使用的时候进行百度，现学现用。<br>此外，一些产品的微信群也是不错的，我是加入了学校的一个社团举办的产品经理学习资料分享群，在上面有各种学习资源以及产品人交流，也让我学到挺多的。学习的时候也不是走马观花，我都是会把一些认为有用的东西记录下来，方便以后进行复习：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-199139ccb6ae4719.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="网课的笔记"></p>
+<h2 id="亮剑出鞘"><a href="#亮剑出鞘" class="headerlink" title="亮剑出鞘"></a>亮剑出鞘</h2><p>由于简历平平，想着可能要先找个有点相关的实习来学习一点东西，顺便充实一下自己的简历。恰好那时候看到学校附近有个创业公司（广州列丰）在招UI设计实习生，由于之前在学校新闻中心的设计部做过部长，抱着试一试的态度去面试，也成功被选上了。于是在3-5月份的时候就开始了自己人生的第一份工作，在工作的时候主要是跟产品经理对接，将产品经理设计的原型图没化，设计出app界面，包括移动端跟TV端的。此处要感谢我们当时的产品经理@谢姐 做设计的时候她不会太死板的要求我们需要按照原型图来进行模仿，可以有自己的一些发挥空间，也不用完全按照规范来，具体情况具体分析。就比如一个目标用户是老年人的界面，字体跟按钮大小就不能照搬其他页面的设计了，要根据实际的使用场景来设计，字体要偏大，icon也要少用，多用字体替代。在列丰对于互联网产品线有了比较深刻的了解，对人员分工配合也比较清楚，也逐渐觉得自己对做产品有一定的潜质，学到的这些对后面面试也是有很大帮助，感谢列丰！</p>
+<h2 id="上战场"><a href="#上战场" class="headerlink" title="上战场"></a>上战场</h2><p>一直都在纸上谈兵的话对自己是没有太大提高，想真正成为产品人，就要去努力。于是就在春招的时候给各大公司海投简历，应聘产品的暑期实习生，一般都是在线填简历，然后线上笔试，线下面试。投出的简历有以下这些：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-db3266945e279bcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="各大公司校招网站"><br>投出的简历有很多，收到回复的却不多，而能够得到面试机会的就只有5家了。<br>1.YY（欢聚时代）<br>YY是挺高的，在投出了简历的不久后就发来了面试通知，面试地点是YY总部，第一次面试，加上对于产品自己也是有所研究，觉得胜券在握，很随意什么都没准备地就去了。一面，面试官先是让我自我介绍，当时内心暗喜，觉得是在我的意料之中，然而，当面试官问到一些考产品思维的问题的时候我变得很结巴，就比如但面试官让我评价APP“same”的时候，我不知道怎么去回答，全程都是我觉得很好，能够促进陌生人社交blabla的，不懂得从产品的角度去回答，也没有提及专业术语。结果也是意料之中，一面就游了。<br>2.腾讯<br>腾讯是我很想去的公司，加之YY面试失败教训在头，所以面试腾讯的时候做了一些准备，在网上看面经，了解到腾讯的产品岗位一面是群面，接着再去搜索群面的攻略，准备到面试的时候就做一个计时员，能够有所表现，掌控时间，而且风险也比较低。面试的时候，一共是8人一个小组，给你一道题目，先是没人一分钟自我介绍，接下来进行30分钟讨论，一面题目发下来，不知道是不是因为紧张，竟然审题审错了，而且等到开始讨论的时候，也没有争取到计时员的身份，在讨论过程中因为审题出错，也没有怎么推动整个讨论进程，结果也是意料之中，一轮游。后来跟小伙伴交流，觉得群面最主要的还是看你有没有提出一个有推动性的观点，有没有对整个讨论经常有较大的贡献，而不是看身份，组长跟计时员不一定就是入围的，只不过是说入围的几率大一些罢了。<br>3.今日头条<br>今日头条是视频面试，因为前面已经有两次失败的经历在前面，所以我也没抱太大希望。面试之前对头条的产品进行了详细体验，也看了一些今日头条的产品体验报告以及竞品分析，做好被提问的准备。面试的时间是定在6点半，一直等到7点头条的面试官才上线，不过因为是前面超时了所以情有可原。面试的过程是一对一的，问得问题包括我的一些项目经历，还有一些逻辑问题，以及对目前的共享单车的看法，个人觉得答的规规矩矩，没有特别好但是也算是有自己的思考。能不能入围就一个想法：尽人事，听天命。结果也是一样的，一轮游，面到这里已经有点灰心，不过心态也好好，调整调整，重新上路。<br>4.京东<br>京东我投的是技术销售，因为也不是特别想去，所以在电话面试的时候就跟面试官说自己的想法是往产品去，不想做技术，也就没有下文了。<br>5.WPS<br>WPS当时投简历的时候是抱着试一试的态度投的，投的是产品设计师（PM），毕竟前面已经失败多次，觉得可能面试通过的几率也不能算大。所以面试的时候抱着一种十分轻松的心态，在面试之前做了一些功课，体验了一下WPS的产品，踏上战场。首先是一面，问的是关于学校的项目经历，实习的经历以及一些产品思维，面试官也是现在我们小组的老大，他的思维很清晰，而且面试的时候是一边考验你一边带你的那种，会引导你去思考更多，面试也是很幸运地通过了。紧接着是二面，二面的时候是一个精通各种领域的面试官来面的，问题跟一面的有所差别，除了问一些产品的思维问题，还会拓展到专业的一些基础知识，比如我是软件工程专业的会被问到一些电工和高数的问题，个人认为是在考察学习态度以及抗压能力（面产品被问到专业知识，慌不慌？）本以为二面没戏了，在当天晚上收到了最后hr面的通知，当时开心到跳起。这也给我启发：<strong>没有等到最后结果，千万不要放弃！</strong>金山的hr面是hr跟在了解一些基本的情况，只需要实话实说就好了，氛围相对比较轻松。<br><strong>每次面试完，不能让它过去就过去，要学会总结经验与教训，下次避免出现相似的问题，不断提高自我。</strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-70eabfcf04d1738b.jpg" alt="面试经验总结"></p>
+<p>最后很幸运，通过这么多场锻炼，成功拿到了金山WPS的offer，开始了另一段美妙的旅途。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3250499-19f13447684752b6.jpg" alt="金山软件大厦"></p>
+<h2 id="曾梦想仗剑走天涯"><a href="#曾梦想仗剑走天涯" class="headerlink" title="曾梦想仗剑走天涯"></a>曾梦想仗剑走天涯</h2><p>写下这篇文章的时候，我也算是在产品路上摸爬滚打了一小段日子了，也开始了我在金山的实习，在慢慢习惯，慢慢提高。回顾自己的产品之路，感觉收获是不少的，无论是自己在网上搜索各种资源来学习，还是投入到实习当中锻炼自我，都是一段难忘的回忆。对于未来，还是有所期待，希望能够<strong>成为一个真正的产品人，做出对用户更加友好的产品</strong>，愿与各位产品人一起努力。</p>
+<p>————————————–分割线————————————–</p>
+<p>有兴趣的童鞋可以关注我的<a href="http://gupeitian.top">个人博客</a>，我会不时在上面分享一些个人的经验，体会。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/09/27/我对产品经理的理解/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/2.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/hhh.jpg" alt="辜培钿's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        gpt@gupeitian.top
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:gpt@gupeitian.top" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/09/">九月 2017<span class="sidebar_archives-count">6</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/产品/">产品<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/摄影/">摄影<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">bookmark</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="时刻">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                时刻
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于我">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于我
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">grade</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">6</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/nidekourou" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/profile.php?id=100011359522555" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://weibo.com/u/2256239110" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.svg);">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/nidekourouha" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/gu-pei-dian/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-zhihu.svg);">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;GUGU
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#2e2e2e'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #2e2e2e, 0 0 15px #2e2e2e'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#2e2e2e',
+        'border-left-color': '#2e2e2e'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script src="/js/smoothscroll.js"></script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
